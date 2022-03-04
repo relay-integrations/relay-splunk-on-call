@@ -2,9 +2,9 @@ apiVersion: integration/v1
 kind: Trigger
 name: incident-triggered
 version: 1
-summary: VictorOps incident triggered
+summary: Splunk On-Call incident triggered
 description: |
-  This trigger fires when a VictorOps incident is triggered for the first time.
+  This trigger fires when a Splunk On-Call incident is triggered for the first time.
 
 responders:
 - webhook
@@ -16,24 +16,24 @@ schemas:
     file: event.schema.json
 
 examples:
-- summary: Receive a webhook from VictorOps when an incident is created
+- summary: Receive a webhook from Splunk On-Call when an incident is created
   content:
     apiVersion: v1
     kind: Trigger
-    name: victorops-incident
+    name: splunkoncall-incident
     source:
       type: webhook
-      image: relaysh/victorops-trigger-incident-triggered:latest
+      image: relaysh/splunkoncall-trigger-incident-triggered:latest
     binding:
       parameters:
-        id: !Data incident
-        name: !Data entity_display_name
-        state: !Data entity_state
-        timestamp: !Data vo_alert_rcv_time
+        id: ${event.alert.entity_id}
+        name: ${event.alert.entity_display_name}
+        state: ${event.alert.entity_state}
+        timestamp: ${event.alert.vo_alert_rcv_time}
 
 build:
   apiVersion: build/v1
   kind: Docker
 
 publish:
-  repository: relaysh/victorops-trigger-incident-triggered
+  repository: relaysh/splunkoncall-trigger-incident-triggered

@@ -4,11 +4,11 @@
   "properties": {
     "endpointURL": {
       "type": "string",
-      "description": "The API endpoint URL to post to; enabled by turning on the REST integration on VictorOps"
+      "description": "The API endpoint URL to post to; enabled by turning on the REST integration on Splunk On-Call"
     },
     "routingKey": {
       "type": "string",
-      "description": "The VictorOps routing key, affixed to the endpoint_url to enable custom alert routing"
+      "description": "The Splunk On-Call routing key, affixed to the endpoint_url to enable custom alert routing"
     },
     "entityID": {
       "type": "string",
@@ -22,5 +22,11 @@
       "type": "string",
       "description": "The body of the message for the update"
     }
-  }
+  },
+  "required": [
+    "endpointURL",
+    "routingKey",
+    "entityDisplayName",
+    "stateMessage"
+  ]
 }

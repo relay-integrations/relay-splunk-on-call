@@ -4,13 +4,13 @@ apiVersion: integration/v1
 kind: Step
 name: incident-update
 version: 1
-summary: Update a VictorOps incident timeline
+summary: Update a Splunk On-Call incident timeline
 
 description: |
-  Updates a VictorOps incident timeline with data.
+  Updates a Splunk On-Call incident timeline with data.
 
 publish:
-  repository: relaysh/victorops-step-incident-update
+  repository: relaysh/splunkoncall-step-incident-update
 
 build:
   apiVersion: build/v1
@@ -22,13 +22,13 @@ examples:
   content:
     apiVersion: v1
     kind: Step
-    image: relaysh/victorops-step-incident-update
+    image: relaysh/splunkoncall-step-incident-update
     spec:
-      endpointURL: !Secret endpointURL
-      routingKey: "relay"
+      endpointURL: ${secrets.endpointURL}
+      routingKey: relay
       entityID: ""
-      entityDisplayName: !Parameter entityDisplayName
-      stateMessage: !Parameter stateMessage
+      entityDisplayName: ${parameters.entityDisplayName}
+      stateMessage: ${parameters.stateMessage}
 
 schemas:
   spec:

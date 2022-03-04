@@ -1,15 +1,15 @@
-# VictorOps
+# Splunk On-Call
 
-This integration provides interoperability with [VictorOps](https://www.victorops.com/) for incident response and real-time operations.
-
+This integration provides interoperability with [Splunk On-Call](https://www.splunk.com/on-call/) for incident response and real-time operations.
 
 ## Triggers
 
 |  Name                                 | Description                             | 
 |---------------------------------------|-----------------------------------------|
-| [incident-triggered](/triggers/incident-triggered)  | Processes a webhook when a new incident is triggered in VictorOps
+| [incident-triggered](/triggers/incident-triggered)  | Processes a webhook when a new incident is triggered in Splunk On-Call
 
 ## Steps
+
 | Name  | Description |
 |-------|-------------|
 | [incident-update](/steps/incident-update) | Posts an update to an incident timeline |
