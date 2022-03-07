@@ -4,7 +4,7 @@ This integration provides interoperability with [Splunk On-Call](https://www.spl
 
 ## Triggers
 
-|  Name                                 | Description                             | 
+|  Name                                 | Description                             |
 |---------------------------------------|-----------------------------------------|
 | [incident-triggered](/triggers/incident-triggered)  | Processes a webhook when a new incident is triggered in Splunk On-Call
 

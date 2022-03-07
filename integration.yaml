@@ -8,7 +8,7 @@ license: Apache-2.0
 homepage: https://github.com/relay-integrations/relay-splunkoncall
 
 description: |
-  Splunk On-Call is incident management software providing DevOps observability, collaboration & real-time alerting, to build, deploy & operate software. 
+  Splunk On-Call (previously VictorOps) is incident management software providing DevOps observability, collaboration & real-time alerting, to build, deploy & operate software. 
 
 owner:
   name: Puppet, Inc.
