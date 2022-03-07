@@ -3,7 +3,7 @@ kind: Integration
 name: splunkoncall
 channel: alpha
 version: v20220304
-summary: Splunk On-Call
+summary: Splunk On-Call (previously VictorOps)
 license: Apache-2.0
 homepage: https://github.com/relay-integrations/relay-splunkoncall
 

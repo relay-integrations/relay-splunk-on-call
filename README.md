@@ -1,4 +1,4 @@
-# Splunk On-Call
+# Splunk On-Call (previously VictorOps)
 
 This integration provides interoperability with [Splunk On-Call](https://www.splunk.com/on-call/) for incident response and real-time operations.
 
