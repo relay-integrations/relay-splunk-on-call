@@ -4,72 +4,72 @@
   "properties": {
     "alert": {
       "type": "object",
-      "description": "The alert data"
-    },
-    "properties": {
-      "ack_author": {
-        "type": "string",
-        "description": "The username of the person who acknowledged the incident"
-      },
-      "alert_type": {
-        "type": "string"
-      },
-      "created_by": {
-        "type": "string",
-        "description": "The username of the person who created the incident"
-      },
-      "entity_display_name": {
-        "type": "string",
-        "description": "The title of the incident"
-      },
-      "entity_id": {
-        "type": "string",
-        "description": "The internal Splunk On-Call ID of the entity; used for associating updates with an incident"
-      },
-      "entity_state": {
-        "type": "string"
-      },
-      "is_vo_ack": {
-        "type": "string"
-      },
-      "message_type": {
-        "type": "string"
-      },
-      "monitor_name": {
-        "type": "string"
-      },
-      "monitoring_tool": {
-        "type": "string"
-      },
-      "notificationtype": {
-        "type": "string"
-      },
-      "state_message": {
-        "type": "string",
-        "description": "Longform body of the message"
-      },
-      "state_start_time": {
-        "type": "string"
-      },
-      "timestamp": {
-        "type": "string"
-      },
-      "timet": {
-        "type": "string"
-      },
-      "vo_alert_rcv_time": {
-        "type": "string",
-        "description": "Timestamp at which the alert was received by Splunk On-Call"
-      },
-      "vo_monitor_type": {
-        "type": "string"
-      },
-      "vo_organization_id": {
-        "type": "string",
-        "description": "The Splunk On-Call organization ID"
-      },
-      "vo_uuid": {
-        "type": "string"
+      "description": "The alert data",
+      "properties": {
+        "ack_author": {
+          "type": "string",
+          "description": "The username of the person who acknowledged the incident"
+        },
+        "alert_type": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string",
+          "description": "The username of the person who created the incident"
+        },
+        "entity_display_name": {
+          "type": "string",
+          "description": "The title of the incident"
+        },
+        "entity_id": {
+          "type": "string",
+          "description": "The internal Splunk On-Call ID of the entity; used for associating updates with an incident"
+        },
+        "entity_state": {
+          "type": "string"
+        },
+        "is_vo_ack": {
+          "type": "string"
+        },
+        "message_type": {
+          "type": "string"
+        },
+        "monitor_name": {
+          "type": "string"
+        },
+        "monitoring_tool": {
+          "type": "string"
+        },
+        "notificationtype": {
+          "type": "string"
+        },
+        "state_message": {
+          "type": "string",
+          "description": "Longform body of the message"
+        },
+        "state_start_time": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string"
+        },
+        "timet": {
+          "type": "string"
+        },
+        "vo_alert_rcv_time": {
+          "type": "string",
+          "description": "Timestamp at which the alert was received by Splunk On-Call"
+        },
+        "vo_monitor_type": {
+          "type": "string"
+        },
+        "vo_organization_id": {
+          "type": "string",
+          "description": "The Splunk On-Call organization ID"
+        },
+        "vo_uuid": {
+          "type": "string"
+        }
       }
     }
   }
